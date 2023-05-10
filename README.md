@@ -195,3 +195,61 @@ mutation {
   }
 }
 ```
+
+### 3. Delete Address
+
+```graphql
+mutation {
+  deleteAddress(address_id: 3)
+}
+```
+
+```json
+//Output:
+{
+  "data": {
+    "deleteAddress": true
+  }
+}
+```
+
+**What happens if we fetch data for `person_id = 3` now?**
+
+```json
+//Output:
+{
+  "data": {
+    "getPersonById": {
+      "person_id": "3",
+      "name": "Lucy",
+      "email": "ar_alok@accionlabs.com",
+      "addressId": 3,
+      "address": null
+    }
+  },
+  "errors": [
+    {
+      "message": "Internal Server Error(s) while executing query",
+      "extensions": null,
+      "path": null
+    }
+  ]
+}
+```
+
+
+### 4. Delete Person
+```graphql
+mutation {
+  deletePerson(person_id: 3)
+}
+```
+
+```json
+//Output:
+{
+  "data": {
+    "deletePerson": true
+  }
+}
+```
