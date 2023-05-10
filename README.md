@@ -12,7 +12,7 @@
 
 ## Query
 
-### Get All Persons
+### 1. Get All Persons
 
 ```graphql
 {
@@ -69,7 +69,7 @@
 }
 ```
 
-### Get All Address
+### 2. Get All Address
 
 ```graphql
 {
@@ -106,7 +106,7 @@
 }
 ```
 
-### Get Person And Address By Id
+### 3. Get Person And Address By Id
 
 ```graphql
 {
@@ -138,6 +138,32 @@
         "city": "New York City",
         "zipcode": "10001"
       }
+    }
+  }
+}
+```
+
+## Mutation 
+### 1. Create Address
+
+```graphql
+mutation {
+  createAddress(city: "Austin", zipcode: "78717") {
+    address_id
+    city
+    zipcode
+  }
+}
+```
+
+```json
+//Output:
+{
+  "data": {
+    "createAddress": {
+      "address_id": "4",
+      "city": "Austin",
+      "zipcode": "78717"
     }
   }
 }
