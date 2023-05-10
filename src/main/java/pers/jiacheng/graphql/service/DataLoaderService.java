@@ -20,7 +20,6 @@ public class DataLoaderService {
     
     @PostConstruct
     public void loadData(){
-		System.out.println("开始加载数据");
     	Stream.of(
 				  new Address(1, "New York City", "10001"),
 				  new Address(2, "Dallas", "20002"),
