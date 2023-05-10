@@ -10,7 +10,7 @@
 - Clone the repository, and install Maven Dependencies
 - http://localhost:8088/graphiql
 
-## Query
+## Query (Read)
 
 ### 1. Get All Persons
 
@@ -143,7 +143,7 @@
 }
 ```
 
-## Mutation 
+## Mutation (Write)
 ### 1. Create Address
 
 ```graphql
@@ -164,6 +164,33 @@ mutation {
       "address_id": "4",
       "city": "Austin",
       "zipcode": "78717"
+    }
+  }
+}
+```
+
+### 2. Create Person
+
+```graphql
+mutation {
+  createPerson(name: "Jiacheng", addressId: 4, email: "743160803@qq.com") {
+    person_id
+    name
+    addressId
+    email
+  }
+}
+```
+
+```json
+//Output:
+{
+  "data": {
+    "createPerson": {
+      "person_id": "4",
+      "name": "Jiacheng",
+      "addressId": 4,
+      "email": "743160803@qq.com"
     }
   }
 }
