@@ -1,2 +1,2 @@
-# sprintboot-graphql-crud
+# springboot-graphql-crud
 A CRUD Java Spring Boot with GraphQL
