@@ -24,8 +24,8 @@ type Query{
 }
  
 type Mutation{
-	createPerson(name:  String!, email:String, addressId: ID!) : Person
-	createAddress(city:String, zipcode:String) : Address!
-	deletePerson(id: ID) : Boolean
-	deleteAddress(id: ID) :	Boolean
+	createPerson(name: String!, email: String, addressId: ID!) : Person
+	createAddress(city: String, zipcode: String) : Address!
+	deletePerson(person_id: ID) : Boolean
+	deleteAddress(address_id: ID) :	Boolean
 }
