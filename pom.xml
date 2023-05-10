@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>pers.jiacheng.graphql</groupId>
-	<artifactId>springboot-graphql-crud</artifactId>
+	<artifactId>graphql-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot-graphql-crud</name>
+	<name>graphql-app</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
