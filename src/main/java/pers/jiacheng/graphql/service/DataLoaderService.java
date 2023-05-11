@@ -30,8 +30,8 @@ public class DataLoaderService {
 
     	Stream.of(
 				  new Person(1, "Richard", "Richard@test.com",1),
-				  new Person(2, "Nate", "ranjan@accionlabs.com", 2),
-				  new Person(3, "Lucy", "ar_alok@accionlabs.com",3)
+				  new Person(2, "Nate", "Nate@test.com", 2),
+				  new Person(3, "Lucy", "Lucy@test.com",3)
 	        ).forEach(person -> {
 	        	personRepository.save(person);
 	        });
