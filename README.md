@@ -1,5 +1,7 @@
 # SpringBoot GraphQL App - A CRUD Java Spring Boot with GraphQL
 
+![](https://raw.githubusercontent.com/NEDONION/my-pics-space/main/20230516195155.png)
+
 ## Requisites
 - Java
 - Spring Boot
